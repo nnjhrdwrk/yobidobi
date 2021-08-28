@@ -476,48 +476,77 @@ img {
 }
 
 
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black; /* Если вы хотите, чтобы точки под перемещаемым текстом */
+
+
+
+.footer {
+	background-color: #2f1340;
+	color: #fff;
+}
+.footer--one {
+	border-bottom: 1px solid #462a6b;
 }
 
-/* Текст подсказки */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-
-  /* Расположите текст подсказки */
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -60px;
-
-  /* Исчезают в подсказке */
-  opacity: 0;
-  transition: opacity 0.3s;
+.footer--one__top {
+	padding: 35px 0 20px;
 }
-
-/* Подсказка стрелка */
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
+.footer--one__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
-
-/* Отображение текста подсказки при наведении курсора мыши на контейнер подсказки */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
+.footer--one__left {
+	padding-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
+.footer__logo {}
+.footer__menu {
+	margin-left: 90px;
+}
+.footer__menu li {
+	margin: 0 30px;
+}
+.footer__menu ul {
+	display: flex;
+}
+.footer__menu a {
+	text-decoration: none;
+	color: #fff;
+}
+.footer--one__right {}
+.number-phone {}
+.our__phone {}
+.footer__adres {}
+.footer--one__bottom {
+	padding-bottom: 11px;
+}
+.footer--one__text {}
+.footer--two {
+	padding: 15px 0 17px;
+}
+.footer--two__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer--two__social {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer--two__soc {
+	display: flex;
+}
+.footer--two__soc li {
+	margin-left: 25px;
+}
+.footer--two__soc li:first-child {
+	margin-left: 0;
+}
+.social {}
+.social--links {
+	
+}
+.footer--first 
