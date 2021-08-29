@@ -281,11 +281,17 @@ img {
 	display: block;
 }*/
 
-.s-filter {
+/*.s-filter {
 	display: block;
 }
 .s-filter.active {
 	display: none;
+}*/
+.s-filter {
+	display: none;
+}
+.s-filter.active {
+	display: block;
 }
 
 .s-filter__inner {
