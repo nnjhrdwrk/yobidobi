@@ -28,6 +28,7 @@ body {
 	line-height: 1;
 	color: #000;
 	font-size: 14px;
+	overflow-x: hidden;
 }
 body, html {
 	
@@ -465,6 +466,11 @@ img {
 .s-product__weight {
 	color: gray;
 	padding-left: 15px;
+	line-height: 25px;
+}
+.s-product__weight p:after {
+	content: "\20BD";
+	margin-left: 2px;
 }
 .s-product__price {
 
@@ -486,9 +492,7 @@ img {
 	color: #fff;
 	background: #ac0d24;
 }
-.btn--product:after {
-	content: "\20BD";
-}
+
 .rub {
 
 }
@@ -573,3 +577,116 @@ img {
 	
 }
 .footer--first 
+
+
+
+
+
+/*s-about__page */
+
+.s-page__about {
+	
+}
+.s-page__about--container {
+	display: flex;
+	justify-content: space-between;
+	padding: 35px 0 20px;
+}
+.s-page__about--left {
+	padding: 0 22px;
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+.s-page__title {
+	font-size: 32px;
+	font-weight: 400;
+}
+.s-page__text {
+	margin: 25px 0 50px;
+	font-family: 'Conv_ofont.ru_Museo Sans Cyrl 300';
+	font-size: 16px;
+}
+.s-page__text p {
+	margin-bottom: 15px;
+}
+.s-page__img {}
+.s-page__about--right {
+	flex-grow: 1;
+}
+.s-page__about--img {}
+
+
+/*delivery page */
+
+.page__delivery {
+	margin-top: 35px;
+}
+.page__delivery--title {
+	font-size: 32px;
+	font-family: 'Conv_ofont.ru_Museo Sans Cyrl 300';
+	font-weight: 400;
+}
+.page__delivery--text {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 25px;
+	line-height: 20px;
+}
+.page__delivery--adres {
+
+}
+
+.page__delivery--sale {
+	color: #dc243e;
+}
+.page__delivery--card {
+	margin-top: 25px;
+}
+
+/*stock--page*/
+
+
+.page__stock {
+	margin-top: 25px;
+	margin-bottom: 30px;
+}
+.page__stock--title {
+	font-size: 32px;
+	font-weight: 400;
+}
+.page__stock--container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.page__stock--item {
+	flex: 0 0 33.33333%;
+	max-width: 33.33333%;
+	padding: 22px 16px 20px 15px;
+	background: rgba(240,240,240,.76);
+	min-height: 100%;
+	border-radius: 20px;
+	position: relative;
+}
+.page__stock--inner {}
+.page__stock--item--top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #dc243e;
+	border-radius: 20px;
+}
+.page__stock--item--title {
+	font-size: 22px;
+}
+.page__stock--item--title p {
+	padding: 0 15px 5px 10px;
+}
+.page__stock--item--icon {}
+.page__stock--item--text {
+	padding: 15px 9px 34px;
+	line-height: 20px;
+}
+.page__stock--text {}
+.page__stock--item--bottom {}
