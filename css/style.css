@@ -273,10 +273,22 @@ img {
 	background: green;
 }
 
-.s-filter {
+/*.s-filter {
 	margin-top: 20px;
+	display: none;
 }
-.s-filer__inner {
+.s-filter.active {
+	display: block;
+}*/
+
+.s-filter {
+	display: block;
+}
+.s-filter.active {
+	display: none;
+}
+
+.s-filter__inner {
 	display: flex;
 	justify-content: center;
 }
@@ -493,7 +505,6 @@ img {
 .footer--one__inner {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 }
 .footer--one__left {
 	padding-top: 10px;
@@ -515,10 +526,16 @@ img {
 	text-decoration: none;
 	color: #fff;
 }
+.footer__menu a:hover {
+	color: #dc243e;
+	transition-duration: 0.7s;
+}
 .footer--one__right {}
 .number-phone {}
 .our__phone {}
-.footer__adres {}
+.footer__adres {
+	padding-top: 6px;
+}
 .footer--one__bottom {
 	padding-bottom: 11px;
 }

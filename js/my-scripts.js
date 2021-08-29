@@ -12,3 +12,8 @@ hamburger.addEventListener("click", function () {
 });
 
 
+$(document).ready(function() {
+	$('.hamburger').click(function(event) {
+		$('.hamburger,.s-filter').toggleClass('active');				
+	});
+});
