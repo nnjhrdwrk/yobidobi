@@ -385,7 +385,7 @@ img {
 .s-product__bottom--top {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 63px;
+	margin-bottom: 5px;
 	position: relative;
 }
 .s-product__item--info {
@@ -408,6 +408,17 @@ img {
 	color: #fff;
 }
 
+.s-product__bottom--middle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.s-product__bottom--description {
+	padding: 15px 15px;
+	line-height: 16px;
+	color: gray;
+
+}
 .s-product__item--info--cont {
   	transition: opacity 0.3s;
 	position: absolute;
