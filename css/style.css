@@ -33,6 +33,9 @@ body {
 body, html {
 	
 }
+html {
+	scroll-behavior:smooth;
+}
 ol, ul {
 	list-style: none;
 }
@@ -189,18 +192,41 @@ img {
 	display: flex;
 	padding-top: 4px;
 }
-/*.main__menu--link {
-	text-decoration: none;
-	color: gray;
-	font-size: 20px;
-	line-height: 20px;
-	margin-left: 15px;
-}*/
+.main__menu--link {
+	width: 195px;
+}
+.recomended {
+	width: 102px;
+}
+.classic {
+	width: 156px;
+}
+.firm {
+	width: 142px;
+}
+.zapech {
+	width: 142px;
+}
+.tempura {
+	width: 115px;
+}
+.hot {
+	width: 103px;
+}
+.sandwich {
+	width: 116px;
+}
+.gunkani {
+	width: 59px;
+}
 
+.napitki {
+	width: 30px;
+}
 .main__menu--list li a {
 	text-decoration: none;
 	color: gray;
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 20px;
 	
 }
@@ -208,7 +234,7 @@ img {
 	margin-left: 0;
 }
 .main__menu--link {
-	margin-left: 15px;
+	margin-left: 6px;
 }
 .main__menu--link:first-child {
 	margin-left: 0;
@@ -220,7 +246,7 @@ img {
 
 .main__menu--button {
 	color: #fff;
-	width: 100px;
+	width: 90px;
 	height: 30px;
 	border-radius: 6px;
 	background-color: #dc243e;
@@ -329,13 +355,23 @@ img {
 	padding: 10px 25px;
 }
 .s-filter__heart {
-
+	border: none;
+	cursor: pointer;
+	background-image: url(../img/heart-regular.svg);
+	width: 25px;
+	height: 25px;
 }
+
 .s-filter__name {
 	margin-top: 15px;
 }
 .s-filter__close {
 	margin-top: 15px;
+	border: none;
+	cursor: pointer;
+	background-image: url(../img/times-solid.svg);
+	width: 13px;
+	height: 21px;
 }
 
 .s-product {
@@ -343,16 +379,17 @@ img {
 	padding: 45px 0;
 }
 .s-product__title {
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 	font-size: 32px;
 }
 .s-product__inner {
 	margin: 0 -15px -70px;
+	display: flex;
+	flex-wrap: wrap;
 }
 .s-product__container {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 	padding: 0 15px;
 }
 .s-product__item {
@@ -373,7 +410,7 @@ img {
 }
 .s-product__item--strikers {}
 .s-product__item--img {
-	padding: 15px 0 35px;
+	padding: 15px 0 0px;
 	height: 330px;
 	display: flex;
 	align-items: center;
@@ -473,6 +510,7 @@ img {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin: 15px 0;
 }
 .s-product__weight {
 	color: gray;
@@ -701,3 +739,33 @@ img {
 }
 .page__stock--text {}
 .page__stock--item--bottom {}
+
+
+
+.s-product__recomended {
+	color: #dc243e;
+	position: relative;
+}
+.s-product__recomended:before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 3px;
+	left: -36px;
+	background-image: url(../img/star-big.svg);
+	background-size: 100%;
+}
+.scrollup{
+	background: url("../img/redscroll.png") no-repeat top left;
+    height: 32px;
+    width: 32px;
+    bottom: 40px;
+    left: 100px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+}
+
